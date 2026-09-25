@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShelfLife - All Deals</title>
+    <meta name="description" content="Browse all near-expiry deals on groceries, bakery, dairy, personal care and snacks. Filter by category and days left.">
+    <meta name="theme-color" content="#060709">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ShelfLife</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Deals</a></li>
+                <li><a href="productdetail.html">Deal Detail</a></li>
+                <li><a href="contact.html">Sell With Us</a></li>
+                <li><a href="cart.html">Cart(0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="catalogue">
+            <h2>All Deals</h2>
+            <p>Fresh discounts, every day.<strong> Once it expires, the deal is gone.</strong></p>
+            <p>Showing <strong id="deal-count">8</strong> deals</p>
+        </section>
+
+        <div id="product-layout">
+            <section id="sidebar">
+                <h2>Filter By</h2>
+                <hr>
+                <h3>Category</h3>
+                <ul>
+                <li>
+                    <input type="checkbox" id="groceries" name="category" value="groceries">
+                    <label for="groceries">Groceries</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="bakery" name="category" value="bakery">
+                    <label for="bakery">Bakery</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="dairy" name="category" value="dairy">
+                    <label for="dairy">Dairy</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="personal-care" name="category" value="personal-care">
+                    <label for="personal-care">Personal Care</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="snacks" name="category" value="snacks">
+                    <label for="snacks">Snacks</label>
+                </li>
+                </ul>
+
+                <h3>Days Left</h3>
+
+                <label for="min">Min:</label>
+                <input type="number" name="min" id="min" min="0" placeholder="1">
+                <br>
+                <label for="max">Max:</label>
+                <input type="number" name="max" id="max" max="15" placeholder="15">
+
+                <h3>Sort By</h3>
+
+                <select name="sort-by" id="sort-by">
+                    <option value="popular">Most Popular</option>
+                    <option value="expiring">Expiring Soonest</option>
+                    <option value="price-asc">Price Low to High</option>
+                    <option value="discount-desc">Discount High to Low</option>
+                </select>
+                <br><br>
+
+                <button type="button" id="apply-filter">Apply Filter</button>
+                <button type="button" id="clear-filter">Clear all</button>
+            </section>
+
+            <section id="products">
+                <h2>All Deals</h2>
+
+                <div class="grid" id="deal-grid"></div>
+                <p id="no-results" hidden>No deals match these filters. Try widening the days range or clearing the filters.</p>
+            </section>
+        </div>
+
+        <section id="best-sellers" class="compare-best-sellers">
+            <h2>Compare Today's Top Deals</h2>
+            <p>Not sure which to grab first? Here is a side-by-side breakdown.</p>
+
+            <table>
+                <tr>
+                    <th colspan="4">Deal Comparison - Top 3</th>
+                </tr>
+                <tr>
+                    <th>Feature</th>
+                    <th>Bread Loaf</th>
+                    <th>Yogurt Pack</th>
+                    <th>Almond Milk</th>
+                </tr>
+                <tr>
+                    <th rowspan="2">Pricing</th>
+                    <td>₹ 35</td>
+                    <td>₹ 60</td>
+                    <td>₹ 89</td>
+                </tr>
+                <tr>
+                    <td><s>₹ 70</s></td>
+                    <td><s>₹ 120</s></td>
+                    <td><s>₹ 149</s></td>
+                </tr>
+                <tr>
+                    <th>Category</th>
+                    <td>Bakery</td>
+                    <td>Dairy</td>
+                    <td>Groceries</td>
+                </tr>
+                <tr>
+                    <th>Expires In</th>
+                    <td>2 days</td>
+                    <td>3 days</td>
+                    <td>4 days</td>
+                </tr>
+                <tr>
+                    <th>Discount</th>
+                    <td>50%</td>
+                    <td>50%</td>
+                    <td>40%</td>
+                </tr>
+                <tr>
+                    <th>Free Delivery</th>
+                    <td>Above ₹ 199</td>
+                    <td>Above ₹ 199</td>
+                    <td>Above ₹ 199</td>
+                </tr>
+                <tr>
+                    <th>Best For</th>
+                    <td>Daily use</td>
+                    <td>Breakfast</td>
+                    <td>Beverages</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <h3>&copy; 2026 ShelfLife. All rights reserved.</h3>
+        <p><em>Don't Let It Expire. Sell It.</em></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Deals</a></li>
+                <li><a href="contact.html">Sell With Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+            </ul>
+        </nav>
+
+        <a href="#">Instagram</a>|<a href="#">Twitter</a>|<a href="#">Youtube</a>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
+    <script src="ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShelfLife - Don't Let It Expire. Sell It.</title>
+    <meta name="description" content="ShelfLife connects local stores with near-expiry stock to shoppers who love a discount. Save up to 50% and keep good products out of the bin.">
+    <meta name="theme-color" content="#060709">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ShelfLife</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Deals</a></li>
+                <li><a href="productdetail.html">Deal Detail</a></li>
+                <li><a href="contact.html">Sell With Us</a></li>
+                <li><a href="cart.html">Cart(0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="left-hero">
+                <h2>DON'T LET IT <br> <span id="gradient-text">EXPIRE. SELL IT.</span></h2>
+                <p>ShelfLife connects local stores with a <br>
+                shelf life problem to shoppers who love a <br>
+                <strong>great discount. Win-win, before the clock <br>
+                runs out.</strong></p>
+                <p>Sellers list products expiring within 15 days. We discount<br> it, you shop it, nothing goes to waste.</p>
+                <div id="cta">
+                    <a href="products.html" class="btn1">Shop Deals</a>
+                    <a href="contact.html" class="btn2">List Your Stock</a>
+                </div>
+            </div>
+            <div class="right-hero">
+                <div class="glow orb1"></div>
+                <div class="glow orb2"></div>
+                <img src="https://i.pinimg.com/736x/93/16/78/9316784a058564112f96ddd50101137f.jpg" alt="Fresh discounted groceries">
+            </div>
+        </section>
+
+        <section id="week-drop">
+            <h2>Ending Soon</h2>
+            <p>These deals expire within the week. Grab them before they're gone for good.</p>
+
+            <div class="cards" id="ending-soon"></div>
+        </section>
+
+        <section id="best-sellers">
+            <h2>Today's Top Deals</h2>
+            <table>
+                <tr>
+                    <th colspan="5">🔥 Grabbed the Fastest — This Week</th>
+                </tr>
+                <tr>
+                    <th>Rank</th>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Discounted Price</th>
+                    <th>Days Left</th>
+                </tr>
+                <tbody id="top-deals-rows"></tbody>
+            </table>
+        </section>
+
+        <section id="why-shelflife">
+            <h2>Why ShelfLife?</h2>
+            <p>Because good stock shouldn't go to waste. Here is what we stand for:</p>
+            <ul>
+                <li><strong>Real Discounts</strong> - Up to 50% off, straight from the seller</li>
+                <li><strong>Only Near-Expiry, Never Expired</strong> - Everything listed is still safe to use</li>
+                <li><strong>Local Sellers First</strong> - Supporting small stores near you</li>
+                <li><strong>Less Waste, More Value</strong> - Every order saves a product from the bin</li>
+                <li><strong>Verified Listings</strong> - Sellers confirm expiry dates before listing</li>
+            </ul>
+
+            <h3>Our Promise</h3>
+
+            <dl>
+                <section><dt>Transparency</dt>
+                <dd>Exact expiry date shown on every listing. No surprises at your door.</dd>
+                </section>
+                <section><dt>Sustainability</dt>
+                <dd>Every purchase here is one less item wasted at a store near you.</dd>
+                </section>
+                <section><dt>Community</dt>
+                <dd>Every seller is a small or local business, not a warehouse liquidator.</dd>
+                </section>
+            </dl>
+        </section>
+
+        <section id="get-early">
+            <h2>Get Notified of New Deals</h2>
+            <p>New expiring-stock deals go live <strong>every day.</strong> Be the first to grab them.</p>
+            <form action="" id="newsletter-form">
+                <label for="email" class="sr-only">Email address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                <button type="submit">Notify Me</button>
+            </form>
+            <small>No spam. Unsubscribe anytime.</small>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <h3>&copy; 2026 ShelfLife. All rights reserved.</h3>
+        <p><em>Don't Let It Expire. Sell It.</em></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Deals</a></li>
+                <li><a href="contact.html">Sell With Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+            </ul>
+        </nav>
+
+        <a href="#">Instagram</a>|<a href="#">Twitter</a>|<a href="#">Youtube</a>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
+    <script src="forms.js"></script>
+    <script src="ui.js"></script>
+</body>
+</html>

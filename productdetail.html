@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShelfLife - Deal Detail</title>
+    <meta name="description" content="See the price, expiry date, seller and reviews for this near-expiry deal on ShelfLife.">
+    <meta name="theme-color" content="#060709">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ShelfLife</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Deals</a></li>
+                <li><a href="productdetail.html">Deal Detail</a></li>
+                <li><a href="contact.html">Sell With Us</a></li>
+                <li><a href="cart.html">Cart(0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-section detail-section">
+            <p class="breadcrumb"><a href="index.html">Home</a> &gt; <a href="products.html">Deals</a> &gt; <span id="crumb-name"></span></p>
+
+            <div class="detail-hero">
+                <figure>
+                    <img id="detail-img" src="" alt="">
+                    <figcaption id="detail-cap"></figcaption>
+                </figure>
+
+                <div class="detail-info">
+                    <h1 id="detail-name"></h1>
+                    <p id="detail-desc"></p>
+                    <p>
+                        <strong class="price-now" id="detail-price"></strong>&nbsp;&nbsp;
+                        <s id="detail-mrp"></s>&nbsp;&nbsp;&nbsp;<mark id="detail-off"></mark>
+                    </p>
+                    <p><small id="detail-note"></small></p>
+
+                    <div class="qty-row">
+                        <label for="quantity">Select Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="10" step="1" value="1" required>
+                        <a href="#">Seller Info</a>
+                    </div>
+
+                    <div class="actions">
+                        <button type="button" data-action="add">Add to Cart</button>
+                        <button type="button" data-action="buy">Buy Now</button>
+                    </div>
+
+                    <ul>
+                        <li>&#10003; Free delivery on orders above &#8377;199</li>
+                        <li>&#10003; Ships within 24 hours</li>
+                        <li>&#10003; Verified near-expiry listing, not expired stock</li>
+                        <li>&#10003; Cash on delivery available</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section detail-section">
+            <h2>Why It's Discounted</h2>
+            <p id="why-text"></p>
+
+            <table>
+                <tr>
+                    <th colspan="2" id="t-title"></th>
+                </tr>
+                <tr>
+                    <th>Expiry Date</th>
+                    <td id="t-expiry"></td>
+                </tr>
+                <tr>
+                    <th>Days Left</th>
+                    <td id="t-days"></td>
+                </tr>
+                <tr>
+                    <th>Storage</th>
+                    <td id="t-storage"></td>
+                </tr>
+                <tr>
+                    <th>Seller</th>
+                    <td id="t-seller"></td>
+                </tr>
+                <tr>
+                    <th>Batch No.</th>
+                    <td id="t-batch"></td>
+                </tr>
+            </table>
+            <p><small>Expiry dates are declared by the seller and verified at listing time.</small></p>
+        </section>
+
+        <section class="page-section detail-section">
+            <h2>Product Details</h2>
+            <dl id="detail-list"></dl>
+        </section>
+
+        <section class="page-section detail-section">
+            <h2>Customer Reviews</h2>
+            <p><strong id="rating-avg"></strong> <span class="stars" id="rating-stars"></span> based on <span id="rating-count"></span> reviews</p>
+            <div id="reviews-list"></div>
+        </section>
+
+        <section class="page-section detail-section">
+            <h2>Other Deals Ending Soon</h2>
+            <div class="cards" id="other-deals"></div>
+        </section>
+
+        <section class="page-section" id="not-found" hidden>
+            <h2>Deal not found</h2>
+            <p>This deal may have expired or the link is wrong.</p>
+            <p><a href="products.html" class="btn-primary">Browse all deals</a></p>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <h3>&copy; 2026 ShelfLife. All rights reserved.</h3>
+        <p><em>Don't Let It Expire. Sell It.</em></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Deals</a></li>
+                <li><a href="contact.html">Sell With Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+            </ul>
+        </nav>
+
+        <a href="#">Instagram</a>|<a href="#">Twitter</a>|<a href="#">Youtube</a>
+    </footer>
+
+    <script src="products.js" onerror="document.querySelectorAll('.detail-section').forEach(function(s){s.hidden=true});var nf=document.getElementById('not-found');nf.hidden=false;nf.querySelector('h2').textContent='products.js not found';nf.querySelector('p').textContent='Put products.js in the same folder as productdetail.html and reload.'"></script>
+    <script src="cart.js"></script>
+    <script src="ui.js"></script>
+</body>
+</html>

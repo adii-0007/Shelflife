@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShelfLife - Your Cart</title>
+    <meta name="description" content="Review the near-expiry deals in your ShelfLife cart.">
+    <meta name="theme-color" content="#060709">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ShelfLife</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Deals</a></li>
+                <li><a href="productdetail.html">Deal Detail</a></li>
+                <li><a href="contact.html">Sell With Us</a></li>
+                <li><a href="cart.html">Cart(0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-section">
+            <h2>Your Cart</h2>
+
+            <div id="cart-layout" class="cart-layout" hidden>
+                <div id="cart-items"></div>
+                <aside id="cart-summary" class="cart-summary"></aside>
+            </div>
+
+            <div id="cart-empty" class="cart-message" hidden>
+                <h3>Your cart is empty</h3>
+                <p>Good deals expire fast. Have a look at what is ending soon.</p>
+                <a href="products.html" class="btn-primary">Browse deals</a>
+            </div>
+
+            <div id="order-done" class="cart-message" hidden>
+                <h3>Order placed</h3>
+                <p>Thanks for saving a product from the bin. This is a demo, so no payment was taken.</p>
+                <a href="products.html" class="btn-primary">Keep shopping</a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <h3>&copy; 2026 ShelfLife. All rights reserved.</h3>
+        <p><em>Don't Let It Expire. Sell It.</em></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Deals</a></li>
+                <li><a href="contact.html">Sell With Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+            </ul>
+        </nav>
+
+        <a href="#">Instagram</a>|<a href="#">Twitter</a>|<a href="#">Youtube</a>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script src="ui.js"></script>
+</body>
+</html>

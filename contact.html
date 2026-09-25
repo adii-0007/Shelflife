@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ShelfLife</title>
+    <meta name="description" content="Sell your near-expiry stock on ShelfLife. List your products, get a reply within 24 hours and avoid waste.">
+    <meta name="theme-color" content="#060709">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ShelfLife</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Deals</a></li>
+                <li><a href="productdetail.html">Deal Detail</a></li>
+                <li><a href="contact.html">Sell With Us</a></li>
+                <li><a href="cart.html">Cart(0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-section">
+            <h2>List Your Expiring Stock</h2>
+            <p>Got products nearing their expiry date sitting on your shelf? <strong>We'll help you sell them before they go to waste.</strong> Real humans, real replies — within 24 hours.</p>
+        </section>
+
+        <section class="page-section">
+            <h2>Tell Us About Your Stock</h2>
+            <form action="" id="seller-form">
+
+                <fieldset>
+                    <legend>Seller Info</legend>
+                    <label for="store-name">Store / Business Name:</label>
+                    <br>
+                    <input type="text" id="store-name" name="store-name" placeholder="GreenLeaf Organics" required>
+                    <br>
+                    <label for="email-address">Email Address:</label>
+                    <br>
+                    <input type="email" id="email-address" name="email-address" placeholder="seller@example.com" required>
+                    <br>
+                    <label for="phone-number">Phone Number:</label>
+                    <br>
+                    <input type="tel" id="phone-number" name="phone-number" placeholder="9857472823">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Product Info</legend>
+                    <label for="category">Product Category:</label>
+                    <br>
+                    <select name="category" id="category" required>
+                        <option value="" selected disabled>--- Select a category</option>
+                        <option value="groceries">Groceries</option>
+                        <option value="bakery">Bakery</option>
+                        <option value="dairy">Dairy</option>
+                        <option value="personal-care">Personal Care</option>
+                        <option value="snacks">Snacks</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <br>
+                    <label for="expiry-date">Expiry Date:</label>
+                    <br>
+                    <input type="date" id="expiry-date" name="expiry-date">
+                    <br>
+                    <label for="message">Product Details:</label>
+                    <br>
+                    <textarea name="message" id="message" rows="5" cols="40" placeholder="Tell us what you're looking to list — quantity, price, expiry date"></textarea>
+                    <br>
+                    <label for="file">Attach Product Photo (optional):</label>
+                    <br>
+                    <input type="file" id="file" name="file" accept=".jpg,.jpeg,.png,.pdf">
+                    <br>
+                    <small>Max file size: 5MB. Accepted: JPG, PNG, PDF</small>
+                </fieldset>
+
+                <input type="checkbox" name="consent" id="consent" required>
+                <label for="consent">I agree to be contacted by ShelfLife regarding my listing. I have read the <a href="#">Seller Terms</a></label>
+
+                <div class="form-actions">
+                    <button type="submit">Submit Listing</button>
+                    <button type="reset" class="secondary">Clear form</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="page-section">
+            <h2>Our Details</h2>
+
+            <address>
+                <strong>ShelfLife HQ</strong><br>
+                42, Street Level, Hauz Khas Village<br>
+                New Delhi — 110016<br>
+                India
+                <br><br>
+                <a href="mailto:hello@shelflife.in">hello@shelflife.in</a>
+                <br>
+                <a href="tel:+911234567890">+91 12345 67890</a>
+            </address>
+
+            <h3>Support Hours</h3>
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                </tr>
+                <tr>
+                    <td>Monday - Friday</td>
+                    <td>10:00 AM - 7:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>11:00 AM - 5:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Closed</td>
+                </tr>
+            </table>
+
+            <h3>Follow Us</h3>
+
+            <ul class="link-list">
+                <li><a href="#">Instagram — @shelflife.in</a></li>
+                <li><a href="#">Twitter — @shelflife</a></li>
+                <li><a href="#">YouTube — ShelfLife</a></li>
+            </ul>
+        </section>
+
+        <section class="page-section">
+            <h2>Common questions</h2>
+            <p>Quick answers so you don't have to wait for a reply.</p>
+
+            <details>
+                <summary>How soon before expiry should I list my product?</summary>
+                <p>You can list anytime, but products <strong>within 15 days of expiry</strong> get automatically flagged for discount pricing and appear on our "Ending Soon" section for maximum visibility.</p>
+            </details>
+            <details>
+                <summary>How is the discount price decided?</summary>
+                <p>You set your own discount when listing. We recommend <strong>30—50% off</strong> based on days remaining — the closer to expiry, the higher the recommended discount to sell faster.</p>
+            </details>
+            <details>
+                <summary>Is there a fee to list products?</summary>
+                <p>Listing is <strong>free</strong> for verified local sellers. We only take a small commission on completed sales, so you only pay when you actually sell.</p>
+            </details>
+            <details>
+                <summary>What happens if a product isn't sold before expiry?</summary>
+                <p>Unsold listings are automatically removed <strong>2 days before</strong> the expiry date to keep the platform trustworthy for buyers.</p>
+            </details>
+            <details>
+                <summary>How do buyers know the product isn't already expired?</summary>
+                <p>Every listing shows the <strong>exact expiry date</strong> and days remaining. We verify seller-submitted dates and remove any inaccurate listings.</p>
+            </details>
+            <details>
+                <summary>Can I list products from multiple store branches?</summary>
+                <p>Yes. ShelfLife supports multi-branch sellers. Reach out via the form above and select <strong>"Other"</strong> as the category, and mention your branches in the message.</p>
+            </details>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <h3>&copy; 2026 ShelfLife. All rights reserved.</h3>
+        <p><em>Don't Let It Expire. Sell It.</em></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Deals</a></li>
+                <li><a href="contact.html">Sell With Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+            </ul>
+        </nav>
+
+        <a href="#">Instagram</a>|<a href="#">Twitter</a>|<a href="#">Youtube</a>
+    </footer>
+
+    <script src="cart.js"></script>
+    
+    <script src="forms.js"></script>
+    <script src="ui.js"></script>
+</body>
+</html>
