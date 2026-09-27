@@ -53,5 +53,4 @@ User accounts for buyers and sellers
 Real payment integration
 Search bar across the catalogue
 
-Built as a mini project by Ada
-rsh Pandey.
+Built as a mini project by Adarsh Pandey.
